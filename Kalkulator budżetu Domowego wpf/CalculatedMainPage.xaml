@@ -1,0 +1,31 @@
+﻿<Window x:Class="Kalkulator_budżetu_Domowego_wpf.CalculatedMainPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kalkulator_budżetu_Domowego_wpf"
+        mc:Ignorable="d"
+        Title="Obliczanie" Height="450" Width="800">
+    <Grid Margin="0,0,0,1">
+        <Label Content="Obliczanie budżetu domowego" HorizontalAlignment="Left" Height="44" Margin="10,10,0,0" VerticalAlignment="Top" Width="260" FontSize="18"/>
+        <Label Content="Wprowadź przychody :" HorizontalAlignment="Left" Height="29" Margin="10,71,0,0" VerticalAlignment="Top" Width="130"/>
+        <Label Content="Wprowadź dodatkowe przychody ewentualne :" HorizontalAlignment="Left" Height="26" Margin="10,105,0,0" VerticalAlignment="Top" Width="260"/>
+        <Label Content="Wprowadź wydatki ( czynsz) :" HorizontalAlignment="Left" Height="29" Margin="10,152,0,0" VerticalAlignment="Top" Width="206"/>
+        <Label Content="Wprowadź wydatki (media) :" HorizontalAlignment="Left" Height="31" Margin="10,186,0,0" VerticalAlignment="Top" Width="160"/>
+        <Label Content="Wprowadź wydatki (zakupy codzienne) :" HorizontalAlignment="Left" Height="31" Margin="10,222,0,0" VerticalAlignment="Top" Width="232"/>
+        <Button x:Name="button" Content="Wyjście" HorizontalAlignment="Left" Height="34" Margin="151,271,0,0" VerticalAlignment="Top" Width="110" RenderTransformOrigin="0.527,-0.139" Click="quitButton_Click"/>
+        <Label Content="Twój budżet:" HorizontalAlignment="Left" Height="32" Margin="507,54,0,0" VerticalAlignment="Top" Width="93" FontWeight="Bold"/>
+        <Label Content="Twoje wydatki:" HorizontalAlignment="Left" Height="32" Margin="507,105,0,0" VerticalAlignment="Top" Width="99" FontWeight="Bold"/>
+        <Label Content="Twoj saldo:" HorizontalAlignment="Left" Height="32" Margin="507,163,0,0" VerticalAlignment="Top" Width="77" FontWeight="Bold"/>
+        <Label Content="Label" HorizontalAlignment="Left" Height="32" Margin="611,105,0,0" VerticalAlignment="Top" Width="110" FontSize="16"/>
+        <Label Content="Label" HorizontalAlignment="Left" Height="32" Margin="605,163,0,0" VerticalAlignment="Top" Width="110" FontSize="16"/>
+        <TextBox x:Name="incomeTextBox" HorizontalAlignment="Left" Height="29" Margin="145,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" TextChanged="TextBox_TextChanged"/>
+        <Button Content="Oblicz" HorizontalAlignment="Left" Height="34" Margin="25,271,0,0" VerticalAlignment="Top" Width="101" Click="Button_Click"/>
+        <Label Content=" " x:Name="overallIncome" HorizontalAlignment="Left" Height="24" Margin="611,54,0,0" VerticalAlignment="Top" Width="49"/>
+        <TextBox x:Name="incomeTextBoxB" HorizontalAlignment="Left" Height="28" Margin="270,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="expensesTextBoxA" HorizontalAlignment="Left" Height="29" Margin="178,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="expensesTextBoxB" HorizontalAlignment="Left" Height="29" Margin="178,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="expensesTextBoxB2" HorizontalAlignment="Left" Height="29" Margin="242,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104" TextChanged="TextBox_TextChanged"/>
+
+    </Grid>
+</Window>

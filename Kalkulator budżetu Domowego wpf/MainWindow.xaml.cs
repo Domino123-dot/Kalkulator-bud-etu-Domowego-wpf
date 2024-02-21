@@ -22,13 +22,15 @@ namespace Kalkulator_budżetu_Domowego_wpf
             InitializeComponent();
         }
 
-        private void StartButton_Click(object sender, RoutedEventArgs e)
+        private void startButton_Click(object sender, RoutedEventArgs e)
         {
-
+            CalculatedMainPage calculatedPage = new CalculatedMainPage();
+            calculatedPage.Show();
         }
-        private void InfoButton_Click(object sender, RoutedEventArgs e)
+
+        private void infoButton_Click(object sender, RoutedEventArgs e)
         {
-            MainMenu.Visibility = Visibility.Collapsed;
+            
             Window1 objectWindow1 = new Window1();
             objectWindow1.Show();
 
