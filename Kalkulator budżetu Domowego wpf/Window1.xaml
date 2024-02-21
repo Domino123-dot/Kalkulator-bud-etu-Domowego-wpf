@@ -1,0 +1,15 @@
+﻿<Window x:Class="Kalkulator_budżetu_Domowego_wpf.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kalkulator_budżetu_Domowego_wpf"
+        mc:Ignorable="d"
+        Title="Instrukcja" Height="450" Width="800">
+    <Grid>
+        <Label Content="Instrukcja" HorizontalAlignment="Left" Height="51" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Height="295" Margin="21,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="696"><Run Text=" 1."/><Run Text=" "/><Run Text="Aplikacja ma za zadanie pomóc w obliczaniu budżetu domowego za pomocą wprowadzonych przez uzytkownika danych&quot;);"/><LineBreak/><Run Text=" 2."/><Run Text=" "/><Run Text="Wprowadzane dane powinny mieć postać tylko i wyłącznie liczb (bez liter, znaków specjalnych&quot;);"/><LineBreak/><Run Text=" 3."/><Run Text=" "/><Run Text="Przychód - suma kwoty zarabianej przez wszystkich członków gospodarstwa domowego NETTO&quot;);"/><LineBreak/><Run Text=" 4."/><Run Text=" "/><Run Text="Wydatki - wszelakiego rodzaju wydatki na gospodarstwo domowe (rachunki, zakupy, abonamenty, media)&quot;);"/></TextBlock>
+        <Button Content="Wyjście" HorizontalAlignment="Left" Height="40" Margin="587,177,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click"/>
+
+    </Grid>
+</Window>

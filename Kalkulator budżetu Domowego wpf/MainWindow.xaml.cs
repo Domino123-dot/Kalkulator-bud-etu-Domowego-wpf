@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using Microsoft.VisualBasic;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -21,12 +22,18 @@ namespace Kalkulator_budżetu_Domowego_wpf
             InitializeComponent();
         }
 
-        private void StartButton_Click(object sender, RoutedEventArgs e)
+        private void startButton_Click(object sender, RoutedEventArgs e)
         {
-
+            CalculatedMainPage calculatedPage = new CalculatedMainPage();
+            calculatedPage.Show();
         }
-        private void InfoButton_Click(object sender, RoutedEventArgs e)
+
+        private void infoButton_Click(object sender, RoutedEventArgs e)
         {
+            
+            Window1 objectWindow1 = new Window1();
+            objectWindow1.Show();
+
 
         }
 
