@@ -44,12 +44,36 @@ namespace Kalkulator_budżetu_Domowego_wpf
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             string incomeA = incomeTextBox.Text;
+            int numberA = 0;
+            Int32.TryParse(incomeA, out numberA);
             string incomeB = incomeTextBoxB.Text;
+            int numberB = 0;
+            Int32.TryParse(incomeB, out numberB);
             string expensesA = expensesTextBoxA.Text;
+            int expensesANumber = 0;
+            Int32.TryParse(expensesA, out expensesANumber);
             string expensesB = expensesTextBoxB.Text;
+            int expensesBNumber = 0;
+            Int32.TryParse(expensesB, out expensesBNumber);
             string expensesB2 = expensesTextBoxB2.Text;
+            int expensesB2Number = 0;
+            Int32.TryParse(expensesB2, out expensesB2Number);
 
-          
+            int income = numberA + numberB;
+            int expensesOverall = expensesANumber + expensesBNumber + expensesB2Number;
+            int budgetOverall = income - expensesOverall;
+
+            if(budgetOverall<0)
+            {
+                MessageBox.Show("Wydatki są większe od zarobków!", "Alert", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+
+            else
+            {
+                overallIncome.Content = budgetOverall;
+            }
+
+
         }
 
     }
