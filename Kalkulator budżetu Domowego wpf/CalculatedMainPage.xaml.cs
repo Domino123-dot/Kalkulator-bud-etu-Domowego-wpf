@@ -53,20 +53,15 @@ namespace Kalkulator_budżetu_Domowego_wpf
             int income = numberA + numberB;
             int expensesOverall = expensesANumber + expensesBNumber + expensesB2Number;
             int budgetOverall = income - expensesOverall;
-            if (!decimal.TryParse(incomeTextBox.Text, out decimal value) || value < 0 ||
-              !decimal.TryParse(incomeTextBoxB.Text, out decimal value2) || value2 < 0 ||
-              !decimal.TryParse(expensesTextBoxA.Text, out decimal value3) || value3 < 0 ||
-              !decimal.TryParse(expensesTextBoxB.Text, out decimal value4) || value4 < 0 ||
-              !decimal.TryParse(expensesTextBoxB2.Text, out decimal value5) || value5 < 0)
+            if (!Int32.TryParse(incomeTextBox.Text, out int value) || value < 0 ||
+              !Int32.TryParse(incomeTextBoxB.Text, out int value2) || value2 < 0 ||
+              !Int32.TryParse(expensesTextBoxA.Text, out int value3) || value3 < 0 ||
+              !Int32.TryParse(expensesTextBoxB.Text, out int value4) || value4 < 0 ||
+              !Int32.TryParse(expensesTextBoxB2.Text, out int value5) || value5 < 0)
 
             {
 
                 MessageBox.Show("Wprowadziłeś liczbę ujemną, literę, lub nie wypełniłeś wszystkich rubryk, spróbuj ponownie", "Uwaga!", MessageBoxButton.OK, MessageBoxImage.Warning);
-                incomeTextBox.Clear();
-                incomeTextBoxB.Clear();
-                expensesTextBoxA.Clear();
-                expensesTextBoxB.Clear();
-                expensesTextBoxB2.Clear();
                 yourBudget.Content = null;
                 yourExpenses.Content = null;
                 yourSaldo.Content = null;
@@ -74,9 +69,9 @@ namespace Kalkulator_budżetu_Domowego_wpf
             }
             else
             {
-                yourSaldo.Content = budgetOverall + "zł";
-                yourBudget.Content = income + "zł";
-                yourExpenses.Content = expensesOverall + "zł";
+                yourSaldo.Content = budgetOverall + " zł";
+                yourBudget.Content = income + " zł";
+                yourExpenses.Content = expensesOverall + " zł";
             }
 
             if (income < expensesOverall)
