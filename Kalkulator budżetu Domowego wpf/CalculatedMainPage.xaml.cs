@@ -20,21 +20,12 @@ namespace Kalkulator_budżetu_Domowego_wpf
     /// </summary>
     public partial class CalculatedMainPage : Window
     {
-      
+
         public CalculatedMainPage()
         {
             InitializeComponent();
 
-
-
         }
-
-        private void calculateHomeBudget(object sender, RoutedEventArgs e)
-        {
-
-
-        }
-
 
         private void quitButton_Click(object sender, RoutedEventArgs e)
         {
@@ -62,17 +53,55 @@ namespace Kalkulator_budżetu_Domowego_wpf
             int income = numberA + numberB;
             int expensesOverall = expensesANumber + expensesBNumber + expensesB2Number;
             int budgetOverall = income - expensesOverall;
+            if (!decimal.TryParse(incomeTextBox.Text, out decimal value) || value < 0 ||
+              !decimal.TryParse(incomeTextBoxB.Text, out decimal value2) || value2 < 0 ||
+              !decimal.TryParse(expensesTextBoxA.Text, out decimal value3) || value3 < 0 ||
+              !decimal.TryParse(expensesTextBoxB.Text, out decimal value4) || value4 < 0 ||
+              !decimal.TryParse(expensesTextBoxB2.Text, out decimal value5) || value5 < 0)
 
-            if(budgetOverall<0)
             {
-                MessageBox.Show("Wydatki są większe od zarobków!", "Alert", MessageBoxButton.OK, MessageBoxImage.Information);
-            }
 
+                MessageBox.Show("Wprowadziłeś liczbę ujemną, literę, lub nie wypełniłeś wszystkich rubryk, spróbuj ponownie", "Uwaga!", MessageBoxButton.OK, MessageBoxImage.Warning);
+                incomeTextBox.Clear();
+                incomeTextBoxB.Clear();
+                expensesTextBoxA.Clear();
+                expensesTextBoxB.Clear();
+                expensesTextBoxB2.Clear();
+                yourBudget.Content = null;
+                yourExpenses.Content = null;
+                yourSaldo.Content = null;
+
+            }
             else
             {
-                overallIncome.Content = budgetOverall;
+                yourSaldo.Content = budgetOverall + "zł";
+                yourBudget.Content = income + "zł";
+                yourExpenses.Content = expensesOverall + "zł";
             }
 
+            if (income < expensesOverall)
+            {
+                warningDisplay.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                warningDisplay.Visibility = Visibility.Hidden;
+
+            }
+
+        }
+
+        private void resetButtonClick(object sender, RoutedEventArgs e)
+        {
+            incomeTextBox.Text = String.Empty;
+            incomeTextBoxB.Text = String.Empty;
+            expensesTextBoxA.Text = String.Empty;
+            expensesTextBoxB.Text = String.Empty;
+            expensesTextBoxB2.Text = String.Empty;
+            yourExpenses.Content = String.Empty;
+            yourBudget.Content = String.Empty;
+            yourSaldo.Content = String.Empty;
+            warningDisplay.Visibility = Visibility.Hidden;
 
         }
 
