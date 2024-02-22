@@ -31,5 +31,6 @@
         <Button x:Name="resetButton" Content="Reset" HorizontalAlignment="Left" Height="34" Margin="282,271,0,0" VerticalAlignment="Top" Width="101" Click="resetButtonClick"/>
         <Label x:Name="warningDisplay" Content="Twoje wydatki są wieksze od zarobków (!)" HorizontalAlignment="Left" Height="31" Margin="451,222,0,0" VerticalAlignment="Top" Width="270" BorderBrush="#00000000" Foreground="Red" Visibility="Hidden"/>
 
+        
     </Grid>
 </Window>
