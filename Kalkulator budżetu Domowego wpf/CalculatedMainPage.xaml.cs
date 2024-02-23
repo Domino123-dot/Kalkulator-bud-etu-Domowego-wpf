@@ -93,9 +93,9 @@ namespace Kalkulator_budżetu_Domowego_wpf
             expensesTextBoxA.Text = "0";
             expensesTextBoxB.Text = "0";
             expensesTextBoxB2.Text = "0";
-            yourExpenses.Content = "0";
-            yourBudget.Content = "0";
-            yourSaldo.Content = "0";
+            yourExpenses.Content = "0 zł";
+            yourBudget.Content = "0 zł";
+            yourSaldo.Content = "0 zł";
             warningDisplay.Visibility = Visibility.Hidden;
 
         }
