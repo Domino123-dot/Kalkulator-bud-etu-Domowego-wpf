@@ -88,17 +88,21 @@ namespace Kalkulator_budżetu_Domowego_wpf
 
         private void resetButtonClick(object sender, RoutedEventArgs e)
         {
-            incomeTextBox.Text = String.Empty;
-            incomeTextBoxB.Text = String.Empty;
-            expensesTextBoxA.Text = String.Empty;
-            expensesTextBoxB.Text = String.Empty;
-            expensesTextBoxB2.Text = String.Empty;
-            yourExpenses.Content = String.Empty;
-            yourBudget.Content = String.Empty;
-            yourSaldo.Content = String.Empty;
+            incomeTextBox.Text = "0";
+            incomeTextBoxB.Text = "0";
+            expensesTextBoxA.Text = "0";
+            expensesTextBoxB.Text = "0";
+            expensesTextBoxB2.Text = "0";
+            yourExpenses.Content = "0";
+            yourBudget.Content = "0";
+            yourSaldo.Content = "0";
             warningDisplay.Visibility = Visibility.Hidden;
 
         }
 
+        private void incomeTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

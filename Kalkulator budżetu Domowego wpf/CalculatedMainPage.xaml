@@ -8,28 +8,29 @@
         Title="Obliczanie" Height="450" Width="800">
     <Grid Margin="0,0,0,1">
 
-        <Label Content="Obliczanie budżetu domowego" HorizontalAlignment="Left" Height="44" Margin="10,10,0,0" VerticalAlignment="Top" Width="260" FontSize="18"/>
-        <Label Content="Wprowadź przychody :" HorizontalAlignment="Left" Height="32" Margin="8,74,0,0" VerticalAlignment="Top" Width="136"/>
-        <Label Content="Wprowadź dodatkowe przychody ewentualne :" HorizontalAlignment="Left" Height="29" Margin="8,111,0,0" VerticalAlignment="Top" Width="262"/>
-        <Label Content="Wprowadź wydatki ( czynsz) :" HorizontalAlignment="Left" Height="29" Margin="10,152,0,0" VerticalAlignment="Top" Width="168"/>
-        <Label Content="Wprowadź wydatki (media) :" HorizontalAlignment="Left" Height="31" Margin="10,186,0,0" VerticalAlignment="Top" Width="168"/>
-        <Label Content="Wprowadź wydatki (zakupy codzienne) :" HorizontalAlignment="Left" Height="31" Margin="10,222,0,0" VerticalAlignment="Top" Width="232"/>
+        <Label Content="Obliczanie budżetu domowego" HorizontalAlignment="Center" Height="44" Margin="0,8,0,0" VerticalAlignment="Top" Width="260" FontSize="18"/>
+        <Label Content="Przychody" HorizontalAlignment="Left" Height="32" Margin="10,35,0,0" VerticalAlignment="Top" Width="89" FontSize="16"/>
+        <Label Content="Inne źródła dochodu" HorizontalAlignment="Left" Height="29" Margin="0,97,0,0" VerticalAlignment="Top" Width="262" FontSize="16"/>
+        <Label Content="Wydatki (czynsz)" HorizontalAlignment="Left" Height="29" Margin="0,153,0,0" VerticalAlignment="Top" Width="168" FontSize="16"/>
+        <Label Content="Wydatki (media)" HorizontalAlignment="Left" Height="31" Margin="0,222,0,0" VerticalAlignment="Top" Width="168" FontSize="16"/>
+        <Label Content="Wydatki (zakupy)" HorizontalAlignment="Left" Height="31" Margin="0,292,0,0" VerticalAlignment="Top" Width="232" FontSize="16"/>
         <Label Content="Twój budżet:" HorizontalAlignment="Left" Height="32" Margin="524,57,0,0" VerticalAlignment="Top" Width="124" FontWeight="Bold" FontSize="16"/>
         <Label Content="Twoje wydatki:" HorizontalAlignment="Left" Height="32" Margin="524,105,0,0" VerticalAlignment="Top" Width="124" FontWeight="Bold" FontSize="16"/>
         <Label Content="Twoj saldo:" HorizontalAlignment="Left" Height="32" Margin="524,148,0,0" VerticalAlignment="Top" Width="124" FontWeight="Bold" FontSize="16"/>
-        <Label Content="" x:Name="yourExpenses" HorizontalAlignment="Left" Height="32" Margin="654,105,0,0" VerticalAlignment="Top" Width="110" FontSize="16"/>
-        <Label Content="" x:Name="yourSaldo" HorizontalAlignment="Left" Height="32" Margin="654,148,0,0" VerticalAlignment="Top" Width="110" FontSize="16" RenderTransformOrigin="0.525,0.628"/>
+        <Label Content="0 zł" x:Name="yourExpenses" HorizontalAlignment="Left" Height="32" Margin="654,105,0,0" VerticalAlignment="Top" Width="110" FontSize="16"/>
+        <Label Content="0 zł" x:Name="yourSaldo" HorizontalAlignment="Left" Height="32" Margin="654,148,0,0" VerticalAlignment="Top" Width="110" FontSize="16" RenderTransformOrigin="0.525,0.628"/>
 
-        <Label Content="" x:Name="yourBudget" HorizontalAlignment="Left" Height="32" Margin="653,57,0,0" VerticalAlignment="Top" Width="110" FontSize="16"/>
-        <TextBox x:Name="incomeTextBox" HorizontalAlignment="Left" Height="19" Margin="146,81,0,0" VerticalAlignment="Top" Width="96" InputScope="Number" Text="0" MaxLength="9"/>
-        <TextBox x:Name="incomeTextBoxB" HorizontalAlignment="Left" Height="18" Margin="275,119,0,0" VerticalAlignment="Top" Width="93" InputScope="Number" Text="0" MaxLength="9"/>
-        <TextBox x:Name="expensesTextBoxA" HorizontalAlignment="Left" Height="18" Margin="184,158,0,0" VerticalAlignment="Top" Width="92" InputScope="Number" Text="0" MaxLength="9"/>
-        <TextBox x:Name="expensesTextBoxB" HorizontalAlignment="Left" Height="18" Margin="184,192,0,0" VerticalAlignment="Top" Width="92" InputScope="Number" Text="0" MaxLength="9"/>
-        <TextBox x:Name="expensesTextBoxB2" HorizontalAlignment="Left" Height="18" Margin="247,228,0,0" VerticalAlignment="Top" Width="89" InputScope="Number" Text="0" MaxLength="9"/>
-        <Button Content="Oblicz" HorizontalAlignment="Left" Height="34" Margin="25,271,0,0" VerticalAlignment="Top" Width="101" Click="Button_Click"/>
-        <Button x:Name="exitButton" Content="Wyjście" HorizontalAlignment="Left" Height="34" Margin="151,271,0,0" VerticalAlignment="Top" Width="110" RenderTransformOrigin="0.527,-0.139" Click="quitButton_Click"/>
-        <Button x:Name="resetButton" Content="Reset" HorizontalAlignment="Left" Height="34" Margin="282,271,0,0" VerticalAlignment="Top" Width="101" Click="resetButtonClick"/>
+        <Label Content="0 zł" x:Name="yourBudget" HorizontalAlignment="Left" Height="32" Margin="653,57,0,0" VerticalAlignment="Top" Width="110" FontSize="16"/>
+        <TextBox x:Name="incomeTextBox" HorizontalAlignment="Left" Height="24" Margin="10,73,0,0" VerticalAlignment="Top" Width="84" InputScope="Number" Text="0" MaxLength="9" FontSize="14" TextChanged="incomeTextBox_TextChanged"/>
+        <TextBox x:Name="incomeTextBoxB" HorizontalAlignment="Left" Height="22" Margin="10,131,0,0" VerticalAlignment="Top" Width="84" InputScope="Number" Text="0" MaxLength="9" FontSize="14"/>
+        <TextBox x:Name="expensesTextBoxA" HorizontalAlignment="Left" Height="22" Margin="10,196,0,0" VerticalAlignment="Top" Width="84" InputScope="Number" Text="0" MaxLength="9" FontSize="14"/>
+        <TextBox x:Name="expensesTextBoxB" HorizontalAlignment="Left" Height="20" Margin="10,267,0,0" VerticalAlignment="Top" Width="84" InputScope="Number" Text="0" MaxLength="9" FontSize="14"/>
+        <TextBox x:Name="expensesTextBoxB2" HorizontalAlignment="Left" Height="20" Margin="10,342,0,0" VerticalAlignment="Top" Width="84" InputScope="Number" Text="0" MaxLength="9" FontSize="14"/>
+        <Button Content="Oblicz" HorizontalAlignment="Left" Height="34" Margin="270,365,0,0" VerticalAlignment="Top" Width="101" Click="Button_Click"/>
+        <Button x:Name="exitButton" Content="Wyjście" HorizontalAlignment="Left" Height="34" Margin="400,365,0,0" VerticalAlignment="Top" Width="110" RenderTransformOrigin="0.527,-0.139" Click="quitButton_Click"/>
+        <Button x:Name="resetButton" Content="Reset" HorizontalAlignment="Left" Height="34" Margin="536,365,0,0" VerticalAlignment="Top" Width="100" Click="resetButtonClick"/>
         <Label x:Name="warningDisplay" Content="Twoje wydatki są wieksze od zarobków (!)" HorizontalAlignment="Left" Height="31" Margin="451,222,0,0" VerticalAlignment="Top" Width="270" BorderBrush="#00000000" Foreground="Red" Visibility="Hidden"/>
+
 
     </Grid>
 </Window>
