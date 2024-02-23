@@ -17,10 +17,10 @@
         <Label Content="Twój budżet:" HorizontalAlignment="Left" Height="32" Margin="524,57,0,0" VerticalAlignment="Top" Width="124" FontWeight="Bold" FontSize="16"/>
         <Label Content="Twoje wydatki:" HorizontalAlignment="Left" Height="32" Margin="524,105,0,0" VerticalAlignment="Top" Width="124" FontWeight="Bold" FontSize="16"/>
         <Label Content="Twoj saldo:" HorizontalAlignment="Left" Height="32" Margin="524,148,0,0" VerticalAlignment="Top" Width="124" FontWeight="Bold" FontSize="16"/>
-        <Label Content="" x:Name="yourExpenses" HorizontalAlignment="Left" Height="32" Margin="654,105,0,0" VerticalAlignment="Top" Width="110" FontSize="16"/>
-        <Label Content="" x:Name="yourSaldo" HorizontalAlignment="Left" Height="32" Margin="654,148,0,0" VerticalAlignment="Top" Width="110" FontSize="16" RenderTransformOrigin="0.525,0.628"/>
+        <Label Content="0 zł" x:Name="yourExpenses" HorizontalAlignment="Left" Height="32" Margin="654,105,0,0" VerticalAlignment="Top" Width="110" FontSize="16"/>
+        <Label Content="0 zł" x:Name="yourSaldo" HorizontalAlignment="Left" Height="32" Margin="654,148,0,0" VerticalAlignment="Top" Width="110" FontSize="16" RenderTransformOrigin="0.525,0.628"/>
 
-        <Label Content="" x:Name="yourBudget" HorizontalAlignment="Left" Height="32" Margin="653,57,0,0" VerticalAlignment="Top" Width="110" FontSize="16"/>
+        <Label Content="0 zł" x:Name="yourBudget" HorizontalAlignment="Left" Height="32" Margin="653,57,0,0" VerticalAlignment="Top" Width="110" FontSize="16"/>
         <TextBox x:Name="incomeTextBox" HorizontalAlignment="Left" Height="24" Margin="10,73,0,0" VerticalAlignment="Top" Width="84" InputScope="Number" Text="0" MaxLength="9" FontSize="14" TextChanged="incomeTextBox_TextChanged"/>
         <TextBox x:Name="incomeTextBoxB" HorizontalAlignment="Left" Height="22" Margin="10,131,0,0" VerticalAlignment="Top" Width="84" InputScope="Number" Text="0" MaxLength="9" FontSize="14"/>
         <TextBox x:Name="expensesTextBoxA" HorizontalAlignment="Left" Height="22" Margin="10,196,0,0" VerticalAlignment="Top" Width="84" InputScope="Number" Text="0" MaxLength="9" FontSize="14"/>
