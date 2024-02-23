@@ -1,0 +1,25 @@
+D:\Visual\Kalkulator budżetu Domowego wpf\Kalkulator budżetu Domowego wpf\bin\Debug\net8.0-windows\Kalkulator budżetu Domowego wpf.exe
+D:\Visual\Kalkulator budżetu Domowego wpf\Kalkulator budżetu Domowego wpf\bin\Debug\net8.0-windows\Kalkulator budżetu Domowego wpf.deps.json
+D:\Visual\Kalkulator budżetu Domowego wpf\Kalkulator budżetu Domowego wpf\bin\Debug\net8.0-windows\Kalkulator budżetu Domowego wpf.runtimeconfig.json
+D:\Visual\Kalkulator budżetu Domowego wpf\Kalkulator budżetu Domowego wpf\bin\Debug\net8.0-windows\Kalkulator budżetu Domowego wpf.dll
+D:\Visual\Kalkulator budżetu Domowego wpf\Kalkulator budżetu Domowego wpf\bin\Debug\net8.0-windows\Kalkulator budżetu Domowego wpf.pdb
+D:\Visual\Kalkulator budżetu Domowego wpf\Kalkulator budżetu Domowego wpf\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\Visual\Kalkulator budżetu Domowego wpf\Kalkulator budżetu Domowego wpf\obj\Debug\net8.0-windows\App.g.cs
+D:\Visual\Kalkulator budżetu Domowego wpf\Kalkulator budżetu Domowego wpf\obj\Debug\net8.0-windows\Kalkulator budżetu Domowego wpf_MarkupCompile.cache
+D:\Visual\Kalkulator budżetu Domowego wpf\Kalkulator budżetu Domowego wpf\obj\Debug\net8.0-windows\Kalkulator budżetu Domowego wpf_MarkupCompile.lref
+D:\Visual\Kalkulator budżetu Domowego wpf\Kalkulator budżetu Domowego wpf\obj\Debug\net8.0-windows\MainWindow.baml
+D:\Visual\Kalkulator budżetu Domowego wpf\Kalkulator budżetu Domowego wpf\obj\Debug\net8.0-windows\Kalkulator budżetu Domowego wpf.g.resources
+D:\Visual\Kalkulator budżetu Domowego wpf\Kalkulator budżetu Domowego wpf\obj\Debug\net8.0-windows\Kalkulator budżetu Domowego wpf.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual\Kalkulator budżetu Domowego wpf\Kalkulator budżetu Domowego wpf\obj\Debug\net8.0-windows\Kalkulator budżetu Domowego wpf.AssemblyInfoInputs.cache
+D:\Visual\Kalkulator budżetu Domowego wpf\Kalkulator budżetu Domowego wpf\obj\Debug\net8.0-windows\Kalkulator budżetu Domowego wpf.AssemblyInfo.cs
+D:\Visual\Kalkulator budżetu Domowego wpf\Kalkulator budżetu Domowego wpf\obj\Debug\net8.0-windows\Kalkulator budżetu Domowego wpf.csproj.CoreCompileInputs.cache
+D:\Visual\Kalkulator budżetu Domowego wpf\Kalkulator budżetu Domowego wpf\obj\Debug\net8.0-windows\Kalkulator budżetu Domowego wpf.dll
+D:\Visual\Kalkulator budżetu Domowego wpf\Kalkulator budżetu Domowego wpf\obj\Debug\net8.0-windows\refint\Kalkulator budżetu Domowego wpf.dll
+D:\Visual\Kalkulator budżetu Domowego wpf\Kalkulator budżetu Domowego wpf\obj\Debug\net8.0-windows\Kalkulator budżetu Domowego wpf.pdb
+D:\Visual\Kalkulator budżetu Domowego wpf\Kalkulator budżetu Domowego wpf\obj\Debug\net8.0-windows\Kalkulator budżetu Domowego wpf.genruntimeconfig.cache
+D:\Visual\Kalkulator budżetu Domowego wpf\Kalkulator budżetu Domowego wpf\obj\Debug\net8.0-windows\ref\Kalkulator budżetu Domowego wpf.dll
+D:\Visual\Kalkulator budżetu Domowego wpf\Kalkulator budżetu Domowego wpf\obj\Debug\net8.0-windows\Kalkulator budżetu Domowego wpf.sourcelink.json
+D:\Visual\Kalkulator budżetu Domowego wpf\Kalkulator budżetu Domowego wpf\obj\Debug\net8.0-windows\Window1.g.cs
+D:\Visual\Kalkulator budżetu Domowego wpf\Kalkulator budżetu Domowego wpf\obj\Debug\net8.0-windows\Window1.baml
+D:\Visual\Kalkulator budżetu Domowego wpf\Kalkulator budżetu Domowego wpf\obj\Debug\net8.0-windows\CalculatedMainPage.g.cs
+D:\Visual\Kalkulator budżetu Domowego wpf\Kalkulator budżetu Domowego wpf\obj\Debug\net8.0-windows\CalculatedMainPage.baml

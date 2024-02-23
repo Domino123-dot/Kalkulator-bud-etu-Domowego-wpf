@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Kalkulator budżetu Domowego wpf/1.0.0": {
+        "runtime": {
+          "Kalkulator budżetu Domowego wpf.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Kalkulator budżetu Domowego wpf/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
